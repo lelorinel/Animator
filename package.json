@@ -1,0 +1,29 @@
+{
+  "name": "animator",
+  "version": "1.0.0",
+  "description": "\"# Animator\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild src/js/main.js --bundle --outfile=dist/index.js --loader:.html=text",
+    "watch": "esbuild --bundle src/js/main.js --outfile=dist/main.js --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lelorinel/Animator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lelorinel/Animator/issues"
+  },
+  "homepage": "https://github.com/lelorinel/Animator#readme",
+  "devDependencies": {
+    "esbuild": "^0.15.10"
+  },
+  "dependencies": {
+    "@tensorflow/tfjs": "^3.20.0",
+    "three.js": "^0.77.1"
+  }
+}
